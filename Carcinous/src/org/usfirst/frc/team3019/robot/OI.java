@@ -1,6 +1,8 @@
 package org.usfirst.frc.team3019.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -15,6 +17,8 @@ public class OI {
     // Button button = new JoystickButton(stick, buttonNumber);
     public Joystick stick = new Joystick(0);
     public Joystick xbox = new Joystick(1);
+    
+    public Button button1 = new JoystickButton(stick, 1);
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
     // commands the same as any other Button.
