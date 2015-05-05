@@ -15,7 +15,7 @@ public class Drive extends Command {
 	@Override
 	protected void execute() {
 		// TODO Auto-generated method stub
-		Robot.driveTrain.arcadeDrive(Robot.oi.stick.getY(), Robot.oi.stick.getTwist());
+		Robot.driveTrain.arcadeDrive(-Robot.oi.stick.getY(), Robot.oi.stick.getTwist());
 	}
 
 	@Override

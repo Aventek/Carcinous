@@ -24,6 +24,6 @@ public class DriveTrain extends Subsystem{
 		setDefaultCommand(new Drive());
 	}
 	public void arcadeDrive(double moveValue, double rotateValue){
-		drive.arcadeDrive(-moveValue * RobotMap.DRIVE_NERF, rotateValue * RobotMap.TURN_NERF);
+		drive.arcadeDrive(moveValue * RobotMap.DRIVE_NERF, rotateValue * RobotMap.TURN_NERF);
 	}
 }
